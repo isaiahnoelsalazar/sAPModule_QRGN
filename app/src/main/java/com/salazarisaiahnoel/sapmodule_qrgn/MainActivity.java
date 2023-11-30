@@ -1,6 +1,7 @@
 package com.salazarisaiahnoel.sapmodule_qrgn;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.graphics.Bitmap;
 import android.graphics.Color;
@@ -30,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         i = findViewById(R.id.img);
         e = findViewById(R.id.edit_text);
